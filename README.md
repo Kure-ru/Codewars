@@ -9,7 +9,9 @@ I like to compare my old solutions to the new ones I come up with. This is why I
 ## What I learned
 The biggest lesson I have learned from tackling this never-ending supply of questions is the realization that there is always room for growth. It's okay to be unable to answer a question, as long as you take the initiative to improve.
 
-![image](https://www.codewars.com/users/Kureru/badges/large)
+![Codewars Stats](https://www.codewars.com/users/Kureru/badges/large)
+
+![Leetcode Stats](https://leetcard.jacoblin.cool/Kure-ru?theme=unicorn)
 
 ## Before you read my solutions ⚠️
 
