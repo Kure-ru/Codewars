@@ -20,39 +20,25 @@
  * @param {string} s
  * @return {string}
  */
-var reverseVowels = function (s) {
-  let count = 0;
-  // reverse voyels
-  let reversed = s
-    .split("")
-    .filter(
-      (letter) =>
-        letter.toLowerCase() === "a" ||
-        letter.toLowerCase() === "e" ||
-        letter.toLowerCase() === "i" ||
-        letter.toLowerCase() === "o" ||
-        letter.toLowerCase() === "u"
-    )
-    .reverse();
+var reverseVowels = function(s) {
+    const VOWELS = 'aeiouAEIOU'
+    let count = 0;
+    // reverse voyels 
+    let reversed = s.split('').filter(letter => VOWELS.includes(letter)).reverse()
+ 
+    // loop through every letter of string
+    let result = s.split('').map((letter, index) => {
+         // if voyel, replace it with reversed voyels of index i
+         if (VOWELS.includes(letter)){          
+    letter = reversed[count]
+    count++      
+     return letter ;
+         } else {
+             return letter
+         }
+    
+    })
 
-  // loop through every letter of string
-  let result = s.split("").map((letter, index) => {
-    // if voyel, replace it with reversed voyels of index i
-    if (
-      letter.toLowerCase() === "a" ||
-      letter.toLowerCase() === "e" ||
-      letter.toLowerCase() === "i" ||
-      letter.toLowerCase() === "o" ||
-      letter.toLowerCase() === "u"
-    ) {
-      letter = reversed[count];
-      count++;
-      return letter;
-    } else {
-      return letter;
-    }
-  });
-
-  // return string
-  return result.join("");
-};
+    // return string
+    return result.join('')
+}
